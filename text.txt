@@ -1,0 +1,59 @@
+users
+=====
+id      name    email       password    image     role('user','admin');
+
+
+language
+========
+id      slug    name
+
+
+category
+========
+id      slug    name
+
+
+course
+=======
+id     slug     type('free,paid')   like     category_id     title       image       decsription
+
+
+course_videos
+=============
+id   course_id      slug    title        video_url
+
+articles
+========
+id   slug   category_id   like    title       image       decsription
+
+
+course_language
+===============
+course_id       language_id
+
+
+article_language
+===============
+article_id       language_id
+
+
+coruse_comment
+==============
+id      user_id        course_id        comment
+
+
+article_comment
+===============
+id      user_id        article_id        comment
+1           1               1               hey good article
+
+member
+=======
+id      slug     title       decsription     learn_date      price
+1                   1               some            10           5000
+2                   2               some            30            9000
+
+
+student_enroll
+===============
+id    pricing_id   user_id     type(active,expire)  learn_date  start_date  end_date    payment_image
